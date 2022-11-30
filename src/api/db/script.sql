@@ -1,9 +1,11 @@
-CREATE DATABASE IF NOT EXISTS Ecommerce;
-USE Ecommerce;
+CREATE DATABASE IF NOT EXISTS Books;
+USE Books;
 
-CREATE TABLE IF NOT EXISTS products (
+CREATE TABLE IF NOT EXISTS book (
   id INT(11) AUTO_INCREMENT,
-  name VARCHAR(255),
-  price DECIMAL(10, 2),
+  title VARCHAR(255),
+  author VARCHAR(255),
+  daterelease DATE,
+  email VARCHAR(255),
   PRIMARY KEY (id)
 );
