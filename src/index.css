@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000300;
+}
+
+.inputs {
+  @apply px-2 py-3 rounded-md  mb-4 bg-gray-200 text-black text-base focus:bg-white
+}
