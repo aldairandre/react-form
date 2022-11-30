@@ -36,7 +36,7 @@ const Form = () => {
   }
   return (
     <div className="flex justify-between flex-col items-center text-white max-w-[1240px] mx-auto px-4">
-      <h1 className='mt-6 text-cyan-500 text-2xl'>LABRARY</h1>
+      <h1 className='mt-6 text-cyan-500 text-2xl'>Books Register</h1>
       <form className='container flex flex-col mt-6 md:w-96'>
 
         <label htmlFor="" className='mb-2'>Title</label>
