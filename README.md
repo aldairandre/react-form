@@ -17,7 +17,7 @@ In the project directory, you can run:
 **Run MySQL image:**
 
 ```
-  docker run -d -v $(pwd)/api/db/data:/var/lib/mysql --rm --name mysql-container mysql-image
+  docker run -d -v $(pwd)/src/api/db/data:/var/lib/mysql --rm --name mysql-container mysql-image
 ``` 
 
 **Do your database:**
