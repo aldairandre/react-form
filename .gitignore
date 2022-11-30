@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /src/api/node_modules
+/src/api/db/data
 
 # testing
 /coverage
