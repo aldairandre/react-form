@@ -9,3 +9,5 @@ CREATE TABLE IF NOT EXISTS book (
   email VARCHAR(255),
   PRIMARY KEY (id)
 );
+
+INSERT INTO book (title,author,daterelease,email) VALUES ('Testing','Aldair','2022-11-30','aldairandre99@gmail.com');
