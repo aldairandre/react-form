@@ -1,0 +1,12 @@
+{
+  "name": "api_gql",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Aldair André",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@apollo/server": "^4.2.2",
+    "graphql": "^16.6.0"
+  }
+}
