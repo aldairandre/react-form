@@ -5,6 +5,11 @@
   "author": "Aldair André",
   "license": "MIT",
   "private": false,
+  "type": "module",
+  "module": "",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
   "dependencies": {
     "@apollo/server": "^4.2.2",
     "graphql": "^16.6.0"

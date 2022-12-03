@@ -1,16 +1,6 @@
 const express = require('express')
-const mysql = require('mysql2')
-
 const app = express()
-
-const connection = mysql.createConnection({
-  host:'localhost',
-  user:'root',
-  password:'root',
-  database:'Books'
-})
-
-connection.connect()
+const connection = require('./db/connection')
 
 app.get('/books',(req,res) =>{
   connection.query('SELECT * FROM book',(error,results)=>{
@@ -21,4 +11,4 @@ app.get('/books',(req,res) =>{
   })
 })
 
-app.listen(9001,'localhost',() => console.log('Listening on port 9001 🚀'))
+app.listen(9001,'localhost',() => console.log('Listening on port http://localhost:9001 🚀'))
