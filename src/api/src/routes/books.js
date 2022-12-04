@@ -12,3 +12,5 @@ router.get('/',(req,res) =>{
     res.send(results.map(item => ({...item})))
   })
 })
+
+module.exports = router;

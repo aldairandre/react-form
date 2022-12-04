@@ -1,14 +1,7 @@
 const express = require('express')
 const app = express()
-const connection = require('./db/connection')
+const books = require('./routes/books')
 
-app.get('/books',(req,res) =>{
-  connection.query('SELECT * FROM book',(error,results)=>{
-    if(error){
-      throw error
-    }
-    res.send(results.map(item => ({...item})))
-  })
-})
+app.use('/books',books)
 
 app.listen(9001,'localhost',() => console.log('Listening on port http://localhost:9001 🚀'))
