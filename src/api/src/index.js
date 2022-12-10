@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const morgan = require('morgan')
@@ -22,4 +23,4 @@ app.use((error,req,res,next)=>{
   })
 })
 
-app.listen(9001,'localhost',() => console.log('Listening on port http://localhost:9001 🚀'))
+app.listen(process.env.SERVER_PORT,process.env.SERVER_HOST,() => console.log(`Listening on port http://localhost:${process.env.SERVER_PORT} 🚀`))
